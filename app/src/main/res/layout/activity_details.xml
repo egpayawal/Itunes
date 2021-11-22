@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            style="@style/Title2.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/details" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/container_banner"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/img_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/Title.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_banner"
+        app:layout_constraintTop_toTopOf="@id/container_banner"
+        tools:maxLines="3"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/txt_release_date"
+        style="@style/Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_banner"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        tools:maxLines="2"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/txt_price"
+        style="@style/Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_banner"
+        app:layout_constraintTop_toBottomOf="@+id/txt_release_date"
+        tools:maxLines="2"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/txt_genre"
+        style="@style/Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_banner"
+        app:layout_constraintTop_toBottomOf="@+id/txt_price"
+        tools:maxLines="2"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/txt_rating"
+        style="@style/Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_banner"
+        app:layout_constraintTop_toBottomOf="@+id/txt_genre"
+        tools:maxLines="2"
+        tools:text="@tools:sample/lorem/random" />
+
+    <TextView
+        android:id="@+id/txt_synopsis_lbl"
+        style="@style/Title.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        android:text="@string/synopsis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_banner"
+        tools:maxLines="1" />
+
+    <TextView
+        android:id="@+id/txt_synopsis"
+        style="@style/Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_synopsis_lbl"
+        tools:maxLines="2"
+        tools:text="@tools:sample/lorem/random" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

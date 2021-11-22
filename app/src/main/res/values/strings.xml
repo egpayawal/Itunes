@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ItunesExam</string>
+    <string name="empty_state_message">Something Went Wrong!</string>
+    <string name="previous_visited">Previous Visited Date:</string>
+    <string name="no_visit">No Previous Visit</string>
+    <string name="details">Details</string>
+    <string name="release_date">Release Date: %s</string>
+    <string name="no_description">No Description Available</string>
+    <string name="synopsis">Synopsis</string>
+</resources>
