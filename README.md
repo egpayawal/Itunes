@@ -3,7 +3,7 @@
 * Android Studio Artic Fox 2020.3.1
 * Android SDK 31
 * Supported OS: Min 23 up to latest
-* Gradle 6.7.1
+* Gradle 7.0.3
 * Model-View-ViewModel (MVVM) Architectural Pattern
 
 ### Dependencies
