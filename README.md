@@ -1,4 +1,4 @@
-# Speakap_Challenge_Android
+# ITunes Exam Android
 
 * Android Studio Artic Fox 2020.3.1
 * Android SDK 31
